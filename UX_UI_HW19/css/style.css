@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: #373738;
+    color: white;
+  }
+  header {
+    background-color: #373738;
+    padding: 15px;
+  }
+  header ul {
+    float: right;
+    color: white;
+  }
+  header li {
+    display: inline-block;
+    padding: 0px 5px;
+  }
+  header p {
+    display: inline-block;
+  }
+  .heroImg {
+    background-color: #5f5f5f;
+    padding: 100px 15px;
+    color: white;
+  }
+  .content {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #787878;
+    text-align: center;
+  }
+  button {
+    padding: 15px;
+    background-color: #373738;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+
+  /* template */ 
+
+.flexContainer {
+    display: flex;
+    color: white;
+}
+.flexContainer > div {
+    display: flex;
+    width: 33.33%;
+    background-color: #373738;
+    margin: 50px;
+    padding: 50px;
+}
+
+.workGrid {
+    display: grid;
+    color: white;
+    grid-template-areas:
+      "header header"
+      "box1 box2";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 125px 75%;
+  }
+  footer {
+    background-color: #373738;
+    padding: 5px;
+    color: white;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+  }
+    @media (max-width: 600px) {
+    .workGrid {
+        grid-template-areas:
+          "header"
+          "box1"
+          "header"
+          "box2";
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    
